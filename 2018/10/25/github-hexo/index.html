@@ -79,19 +79,19 @@
 
 
 
-<meta name="description" content="1.在github中创建仓库2.安装基本框架 安装nvm  12345678# 方式1：homebrew 安装，无需重启$ brew install nvm $ mkdir ~/.nvm$ export NVM_DIR=~/.nvm$ . $(brew --prefix nvm)/nvm.sh# 方式2：curl安装，安装完成后需要重启终端$ curl https://raw.github.com">
+<meta name="description" content="利用Github和Hexo来搭建个人博客 &amp;amp; 遇到的问题 &amp;amp; node.js版本管理">
 <meta name="keywords" content="github,hexo,node">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用github+hexo搭建个人博客">
 <meta property="og:url" content="http://yoursite.com/2018/10/25/github-hexo/index.html">
 <meta property="og:site_name" content="ruishi space">
-<meta property="og:description" content="1.在github中创建仓库2.安装基本框架 安装nvm  12345678# 方式1：homebrew 安装，无需重启$ brew install nvm $ mkdir ~/.nvm$ export NVM_DIR=~/.nvm$ . $(brew --prefix nvm)/nvm.sh# 方式2：curl安装，安装完成后需要重启终端$ curl https://raw.github.com">
+<meta property="og:description" content="利用Github和Hexo来搭建个人博客 &amp;amp; 遇到的问题 &amp;amp; node.js版本管理">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/10/25/github-hexo/Q2.jpg">
-<meta property="og:updated_time" content="2018-10-25T05:09:50.000Z">
+<meta property="og:updated_time" content="2018-10-25T06:08:17.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用github+hexo搭建个人博客">
-<meta name="twitter:description" content="1.在github中创建仓库2.安装基本框架 安装nvm  12345678# 方式1：homebrew 安装，无需重启$ brew install nvm $ mkdir ~/.nvm$ export NVM_DIR=~/.nvm$ . $(brew --prefix nvm)/nvm.sh# 方式2：curl安装，安装完成后需要重启终端$ curl https://raw.github.com">
+<meta name="twitter:description" content="利用Github和Hexo来搭建个人博客 &amp;amp; 遇到的问题 &amp;amp; node.js版本管理">
 <meta name="twitter:image" content="http://yoursite.com/2018/10/25/github-hexo/Q2.jpg">
 
 
@@ -275,6 +275,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/Blog/" itemprop="url" rel="index">
+                    <span itemprop="name">Blog</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -302,7 +324,10 @@
       
 
       
-        <h3 id="1-在github中创建仓库"><a href="#1-在github中创建仓库" class="headerlink" title="1.在github中创建仓库"></a>1.在github中创建仓库</h3><h3 id="2-安装基本框架"><a href="#2-安装基本框架" class="headerlink" title="2.安装基本框架"></a>2.安装基本框架</h3><ul>
+        <center>利用Github和Hexo来搭建个人博客 &amp; 遇到的问题 &amp; node.js版本管理</center>
+
+<a id="more"></a>
+<h3 id="在github中创建仓库"><a href="#在github中创建仓库" class="headerlink" title="在github中创建仓库"></a>在github中创建仓库</h3><h3 id="安装基本框架"><a href="#安装基本框架" class="headerlink" title="安装基本框架"></a>安装基本框架</h3><ul>
 <li><strong>安装nvm</strong></li>
 </ul>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 方式1：homebrew 安装，无需重启</span><br><span class="line"><span class="meta">$</span> brew install nvm </span><br><span class="line"><span class="meta">$</span> mkdir ~/.nvm</span><br><span class="line"><span class="meta">$</span> export NVM_DIR=~/.nvm</span><br><span class="line"><span class="meta">$</span> . $(brew --prefix nvm)/nvm.sh</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 方式2：curl安装，安装完成后需要重启终端</span><br><span class="line"><span class="meta">$</span> curl https://raw.github.com/creationix/nvm/master/install.sh | sh</span><br></pre></td></tr></table></figure>
@@ -314,7 +339,7 @@
 <li><strong>安装Hexo</strong></li>
 </ul>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
-<h3 id="3-编写和发布"><a href="#3-编写和发布" class="headerlink" title="3.编写和发布"></a>3.编写和发布</h3><ul>
+<h3 id="编写和发布"><a href="#编写和发布" class="headerlink" title="编写和发布"></a>编写和发布</h3><ul>
 <li><p><strong>创建博客</strong></p>
 <p>在你想存放网站的文件夹下建立名为username.github.io的文件夹</p>
 </li>
@@ -347,13 +372,13 @@
 <p>测试成功的话，就可以生成静态网页发布到github pages中</p>
 </li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo clean &amp;&amp; hexo g &amp;&amp; hexo d  # 清除缓存和已生成的静态文件 &amp; 生成新的静态文件 &amp; 部署网站</span><br></pre></td></tr></table></figure>
 <ul>
 <li><p><strong>访问博客网址</strong></p>
 <p>访问<a href="http://username.github.io" target="_blank" rel="noopener">http://username.github.io</a></p>
 </li>
 </ul>
-<h3 id="4-遇到的问题"><a href="#4-遇到的问题" class="headerlink" title="4.遇到的问题"></a>4.遇到的问题</h3><ul>
+<h3 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h3><ul>
 <li><p><strong>提示node的版本不够</strong></p>
 <p>之前在进行到<code>npm install hexo-cli -g</code>时候出现问题，提示node版本需要大于&gt;=6.9.0。此处问题为node版本不够，因为之前根据教程中的方法<code>nvm install 4</code>进行安装，导致安装了node4的版本，因此在本教程改为<code></code>nvm install 6`</p>
 </li>
@@ -369,7 +394,7 @@
 <p>​</p>
 </li>
 </ul>
-<h3 id="5-相关内容"><a href="#5-相关内容" class="headerlink" title="5.相关内容"></a>5.相关内容</h3><ul>
+<h3 id="相关内容"><a href="#相关内容" class="headerlink" title="相关内容"></a>相关内容</h3><ul>
 <li><p><strong>nvm &amp; npm &amp; nodejs</strong></p>
 <ul>
 <li>nvm：nodejs版本管理工具。nvm可以管理很多node版本和npm版本</li>
@@ -403,7 +428,7 @@
 <p>详见：<a href="https://blog.csdn.net/u012532033/article/details/73332099" target="_blank" rel="noopener">LTS 与 Node.js 的版本、分支</a></p>
 </li>
 </ul>
-<h3 id="5-参考"><a href="#5-参考" class="headerlink" title="5.参考"></a>5.参考</h3><p>【1】<a href="http://www.newbiefly.com/?p=1193" target="_blank" rel="noopener">5分钟 搭建免费个人博客</a></p>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p>【1】<a href="http://www.newbiefly.com/?p=1193" target="_blank" rel="noopener">5分钟 搭建免费个人博客</a></p>
 <p>【2】<a href="http://www.th7.cn/web/js/201610/193914.shtml" target="_blank" rel="noopener">Node.js v6 LTS 杂谈（一）：LTS 与 Node.js 的版本、分支</a></p>
 <p>【3】<a href="https://blog.csdn.net/xieamy/article/details/70270039?utm_source=blogxgwz0" target="_blank" rel="noopener">mac下安装nvm以及node</a></p>
 <p>【4】<a href="http://taobaofed.org/blog/2015/11/17/nvm-or-n/" target="_blank" rel="noopener">管理 node 版本，选择 nvm 还是 n？</a></p>
@@ -533,6 +558,15 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
 
             
               
@@ -572,7 +606,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-在github中创建仓库"><span class="nav-number">1.</span> <span class="nav-text">1.在github中创建仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-安装基本框架"><span class="nav-number">2.</span> <span class="nav-text">2.安装基本框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-编写和发布"><span class="nav-number">3.</span> <span class="nav-text">3.编写和发布</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-遇到的问题"><span class="nav-number">4.</span> <span class="nav-text">4.遇到的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-相关内容"><span class="nav-number">5.</span> <span class="nav-text">5.相关内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-参考"><span class="nav-number">6.</span> <span class="nav-text">5.参考</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#在github中创建仓库"><span class="nav-number">1.</span> <span class="nav-text">在github中创建仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装基本框架"><span class="nav-number">2.</span> <span class="nav-text">安装基本框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编写和发布"><span class="nav-number">3.</span> <span class="nav-text">编写和发布</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#遇到的问题"><span class="nav-number">4.</span> <span class="nav-text">遇到的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#相关内容"><span class="nav-number">5.</span> <span class="nav-text">相关内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考"><span class="nav-number">6.</span> <span class="nav-text">参考</span></a></li></ol></div>
             
 
           </div>
