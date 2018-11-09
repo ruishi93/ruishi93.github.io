@@ -871,19 +871,19 @@
 
   <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
   <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-  <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
    <script type="text/javascript">
         var gitalk = new Gitalk({
-          clientID: '',
-          clientSecret: '',
+          clientID: '2dec4ed294b04e4ed023',
+          clientSecret: 'a37cf52d15ae284374cf578753d98b7e12dd65a8',
           repo: 'ruishi93.github.io',
           owner: 'ruishi93',
           admin: ['ruishi93'],
-          id: md5(window.location.pathname),
+          id: location.pathname,
           distractionFreeMode: 'true'
         })
-        gitalk.render('gitalk-container')
+        gitalk.render('gitalk-container')           
        </script>
+
 
 
   
