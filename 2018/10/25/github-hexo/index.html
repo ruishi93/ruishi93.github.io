@@ -13,15 +13,15 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="利用Github和Hexo来搭建个人博客 &amp; 遇到的问题 &amp; node.js版本管理">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/2018/10/25/github-hexo/github-hexo/Q2.jpg">
+<meta property="og:image" content="http://example.com/2018/10/25/github-hexo/github-hexo/error.jpg">
 <meta property="article:published_time" content="2018-10-25T02:22:24.000Z">
-<meta property="article:modified_time" content="2018-11-09T07:42:25.000Z">
+<meta property="article:modified_time" content="2021-11-27T08:31:24.000Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="github">
 <meta property="article:tag" content="hexo">
 <meta property="article:tag" content="node">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2018/10/25/github-hexo/github-hexo/Q2.jpg">
+<meta name="twitter:image" content="http://example.com/2018/10/25/github-hexo/github-hexo/error.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -105,8 +105,8 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <center>利用Github和Hexo来搭建个人博客 & 遇到的问题 & node.js版本管理</center>
+<escape><span id="more"></span></escape>
 
-<p><escape><span id="more"></span></escape></p>
 <h3 id="在github中创建仓库"><a href="#在github中创建仓库" class="headerlink" title="在github中创建仓库"></a>在github中创建仓库</h3><h3 id="安装基本框架"><a href="#安装基本框架" class="headerlink" title="安装基本框架"></a>安装基本框架</h3><ul>
 <li><strong>安装nvm</strong></li>
 </ul>
@@ -180,12 +180,9 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> nvm uninstall v4.9.1</span></span><br></pre></td></tr></table></figure>
 
 <p>之后，上面语句报错，提示：</p>
-<p><img src="github-hexo/Q2.jpg"></p>
+<p><img src="github-hexo/error.jpg"></p>
 <p>该问题由于以root身份运行<code>npm install -g</code>引起的。解决办法 以root用户身份运行以下命令以修复权限，然后重试卸载</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo chown -R shirui <span class="string">&quot;<span class="variable">$NVM_DIR</span>/versions/node/v4.9.1&quot;</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo chmod -R u+w <span class="string">&quot;<span class="variable">$NVM_DIR</span>/versions/node/v4.9.1&quot;</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> nvm uninstall v4.9.1</span></span><br></pre></td></tr></table></figure>
-
-<p>​</p>
-</li>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo chown -R shirui <span class="string">&quot;<span class="variable">$NVM_DIR</span>/versions/node/v4.9.1&quot;</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo chmod -R u+w <span class="string">&quot;<span class="variable">$NVM_DIR</span>/versions/node/v4.9.1&quot;</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> nvm uninstall v4.9.1</span></span><br></pre></td></tr></table></figure></li>
 </ul>
 <h3 id="相关内容"><a href="#相关内容" class="headerlink" title="相关内容"></a>相关内容</h3><ul>
 <li><p><strong>nvm &amp; npm &amp; nodejs</strong></p>
@@ -208,7 +205,6 @@
 <p>​    1.nvm 不支持 Windows；</p>
 <p>​    2.n 对全局模块毫无作为，因此有可能在切换了 node 版本后发生全局模块执行出错的问题；nvm 的全局模块存在于各自版本的沙箱中，切换版本后需要重新安装，不同版本间也不存在任何冲突；</p>
 <p>​    3.node 路径。n 是万年不变的 <code>/usr/local/bin</code>；nvm 需要手动指定路径。</p>
-<p>​</p>
 </li>
 </ul>
 <ul>
@@ -228,7 +224,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2018/10/25/github-hexo/" data-id="ckwhjw71l0000c6xpde4cf7dy" data-title="使用github+hexo搭建个人博客" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2018/10/25/github-hexo/" data-id="ckwhk1j4x0000bhxpave5h5pu" data-title="使用github+hexo搭建个人博客" class="article-share-link">Share</a>
       
       
       
