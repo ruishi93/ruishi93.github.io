@@ -294,7 +294,7 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> nvm uninstall v4.9.1</span></span><br></pre></td></tr></table></figure>
 
 <p>之后，上面语句报错，提示：</p>
-<p><img src="github-hexo/error.jpg" alt="error"></p>
+<p><img src="/2018/10/25/github-hexo/error.jpg" alt="error"></p>
 <p>该问题由于以root身份运行<code>npm install -g</code>引起的。解决办法 以root用户身份运行以下命令以修复权限，然后重试卸载</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo chown -R shirui <span class="string">&quot;<span class="variable">$NVM_DIR</span>/versions/node/v4.9.1&quot;</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo chmod -R u+w <span class="string">&quot;<span class="variable">$NVM_DIR</span>/versions/node/v4.9.1&quot;</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> nvm uninstall v4.9.1</span></span><br></pre></td></tr></table></figure></li>
 </ul>
